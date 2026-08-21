@@ -5,13 +5,19 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "beautifulsoup4>=4.15.0",
     "boto3>=1.43.67",
     "branca>=0.8.2",
     "dotenv>=0.9.9",
     "folium>=0.20.0",
     "geopandas>=1.1.4",
     "ipywidgets>=8.1.8",
+    "leafmap>=0.63.1",
     "mapclassify>=2.10.0",
     "matplotlib>=3.11.1",
+    "pytidycensus>=1.2.6",
     "requests>=2.34.2",
 ]
+
+[tool.uv.sources]
+pytidycensus = { path = "../pytidycensus" }
